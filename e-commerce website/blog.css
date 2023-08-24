@@ -1,0 +1,28 @@
+    .blog-posts-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .blog-posts-boxes{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-posts-boxes div{
+height:300px;
+width: 100%;
+    }
+    .blog-posts-boxes div img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 600px){
+        .blog-posts-boxes{
+            grid-template-columns: 1fr;
+        }
+        .blog-posts-boxes div{   
+            width: 100%;
+            height: 200px;
+                }
+    }

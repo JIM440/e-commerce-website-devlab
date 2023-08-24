@@ -1,0 +1,48 @@
+iframe{
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+.grid-container .grid-columns{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grid-columns form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grid-columns form > input, .grid-columns form > textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(196, 186, 186);
+}
+
+.grid-columns form .btn{
+    width: fit-content;
+}
+.people > div{
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+.people > div img{
+    min-width: 70px;
+}
+
+@media (max-width: 900px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .people > div img{
+        max-width: 150px;
+    }
+}
